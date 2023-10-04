@@ -13,9 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+// Route::match(['get'], ['route1', 'route2'], function () {
+//     return view('home');
+// });
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
 Auth::routes();
 

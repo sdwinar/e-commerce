@@ -309,6 +309,9 @@
                 </div>
             </div>
             <div class="row">
+                @foreach ($products as $product)
+                    
+                
                 <!--start product single-->
                 <div class="col-md-6">
                     <div class="product-single row">
@@ -316,79 +319,16 @@
                             <img src="images/watch-3.png" class="img-fluid" alt="Image">
                         </div>
                         <div class="product-cont col-lg-6">
-                            <h4>Luxurious Watch</h4>
-                            <ul>
-                                <li><i class="icofont-check"></i> Crown Protector</li>
-                                <li><i class="icofont-check"></i> Water Resistance</li>
-                                <li><i class="icofont-check"></i> Movement Button</li>
-                                <li><i class="icofont-check"></i> 1 Year Guarantee</li>
-                            </ul>
-                            <h3>$120 <del><sup>$250</sup></del></h3>
+                            <h4>{{ $product->name }}</h4>
+                            {!! $product->description !!}
+                            <h3>${{ $product->sale_price }} <del><sup>${{ $product->price }}</sup></del></h3>
                             <a href><i class="icon-shopping-cart2"></i> Order Now</a>
                         </div>
                     </div>
                 </div>
+          
                 <!--end product single-->
-                <!--start product single-->
-                <div class="col-md-6">
-                    <div class="product-single row">
-                        <div class="product-img text-center col-lg-6">
-                            <img src="images/watch-2.png" class="img-fluid" alt="Image">
-                        </div>
-                        <div class="product-cont col-lg-6">
-                            <h4>Pink Torex Watch</h4>
-                            <ul>
-                                <li><i class="icofont-check"></i> Stainless Steel</li>
-                                <li><i class="icofont-check"></i> High Quality Glass</li>
-                                <li><i class="icofont-check"></i> 3 Step Protection</li>
-                                <li><i class="icofont-check"></i> 2 Year Guarantee</li>
-                            </ul>
-                            <h3>$250 <del><sup>$390</sup></del></h3>
-                            <a href><i class="icon-shopping-cart2"></i> Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!--end product single-->
-                <!--start product single-->
-                <div class="col-md-6">
-                    <div class="product-single row">
-                        <div class="product-img text-center col-lg-6">
-                            <img src="images/watch-1.png" class="img-fluid" alt="Image">
-                        </div>
-                        <div class="product-cont col-lg-6">
-                            <h4>New Yellow Watch</h4>
-                            <ul>
-                                <li><i class="icofont-check"></i> 2 Step Protection Glass</li>
-                                <li><i class="icofont-check"></i> PVD Coating</li>
-                                <li><i class="icofont-check"></i> Clear Super Glass</li>
-                                <li><i class="icofont-check"></i> 3 Year Guarantee</li>
-                            </ul>
-                            <h3>$330 <del><sup>$550</sup></del></h3>
-                            <a href><i class="icon-shopping-cart2"></i> Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!--end product single-->
-                <!--start product single-->
-                <div class="col-md-6">
-                    <div class="product-single row">
-                        <div class="product-img text-center col-lg-6">
-                            <img src="images/watch-4.png" class="img-fluid" alt="Image">
-                        </div>
-                        <div class="product-cont col-lg-6">
-                            <h4>Brand New Black</h4>
-                            <ul>
-                                <li><i class="icofont-check"></i> Lifetime Battery</li>
-                                <li><i class="icofont-check"></i> Awesome Color</li>
-                                <li><i class="icofont-check"></i> Water Resistance</li>
-                                <li><i class="icofont-check"></i> 1 Year Guarantee</li>
-                            </ul>
-                            <h3>$180 <del><sup>$390</sup></del></h3>
-                            <a href><i class="icon-shopping-cart2"></i> Order Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!--end product single-->
+                @endforeach
             </div>
             <div class="more-prod-btn text-center">
                 <a href>More Product</a>
@@ -724,7 +664,7 @@
                 </div>
                 <div class="col-lg-6 col-md-7">
                     <div class="copyright-text text-right">
-                        <p>&copy; Copy 2019. All Rights Reserved By <a href="https://themeforest.net/user/thememeta">thememeta</a></p>
+                        <p>&copy; Copy 2023. All Rights Reserved By <a href="https://mohammed-alamin.netlify.app/en">Mohammed Alamin Hassan</a></p>
                     </div>
                 </div>
             </div>
